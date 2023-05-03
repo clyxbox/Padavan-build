@@ -119,8 +119,6 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SQM/d' .config #SQM
         echo "CONFIG_FIRMWARE_INCLUDE_SQM=y" >> .config #SQM
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_OC/d' .config #CPU超频开关
-        echo "CONFIG_FIRMWARE_INCLUDE_OC=y" >> .config #CPU超频开关
         #########################################################################################        
         sudo ./clear_tree
         sudo ./build_firmware_modify $TNAME 0
